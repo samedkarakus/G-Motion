@@ -24,7 +24,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4G-RT-rRC">
-                                <rect key="frame" x="144.66666666666666" y="791.33333333333337" width="103.66666666666666" height="28.666666666666629"/>
+                                <rect key="frame" x="144.66666666666666" y="775.33333333333337" width="103.66666666666666" height="28.666666666666629"/>
                                 <string key="text">G-Motion © 2025 
 All rights reserved</string>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
@@ -36,7 +36,7 @@ All rights reserved</string>
                         <color key="backgroundColor" name="AppBackground"/>
                         <constraints>
                             <constraint firstItem="h4G-RT-rRC" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="OLy-cv-JWX"/>
-                            <constraint firstAttribute="bottom" secondItem="h4G-RT-rRC" secondAttribute="bottom" constant="32" id="PRE-Fz-N7n"/>
+                            <constraint firstAttribute="bottom" secondItem="h4G-RT-rRC" secondAttribute="bottom" constant="48" id="PRE-Fz-N7n"/>
                             <constraint firstItem="rbd-Ys-mrb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Zn6-mT-lM1"/>
                             <constraint firstItem="rbd-Ys-mrb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="inD-pl-Duq"/>
                         </constraints>

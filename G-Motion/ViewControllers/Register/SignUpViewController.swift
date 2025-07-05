@@ -26,6 +26,13 @@ class SignUpViewController: UIViewController {
         }
     }
 
+    @IBAction func phoneNumberButtonSelected(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let PhoneVC = storyboard.instantiateViewController(withIdentifier: "PhoneNumberViewController") as? PhoneNumberViewController {
+            PhoneVC.modalPresentationStyle = .fullScreen
+            present(PhoneVC, animated: false, completion: nil)
+        }
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.

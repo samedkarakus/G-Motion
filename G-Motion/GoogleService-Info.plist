@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>317548981671-p7c4n4e4ui1abun6l0cjdmc0qm9sn4c2.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.317548981671-p7c4n4e4ui1abun6l0cjdmc0qm9sn4c2</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDZG0zO2BtRi2HzhFrK_RA0g_D1gVsDs2s</string>
+	<key>GCM_SENDER_ID</key>
+	<string>317548981671</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.samedkarakus.G-Motion</string>
+	<key>PROJECT_ID</key>
+	<string>g-motion-7917f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>g-motion-7917f.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:317548981671:ios:3f3d07248ca4af47545a82</string>
+</dict>
+</plist>

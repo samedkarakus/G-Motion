@@ -19,20 +19,14 @@ class LoginViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupTextFields()
+        setupTextFields(to: phoneTextField)
+        setupTextFields(to: passwordTextField)
         setupCountryButton()
         setupDropdown()
         phoneTextField.text = PhoneFormatter.format(phoneTextField.text ?? "")
         addPaddingToLeading(to: passwordTextField)
-
         
         phoneTextField.delegate = self
-    }
-    
-    func addPaddingToLeading(to textField: UITextField) {
-        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 0))
-        textField.leftView = paddingView
-        textField.leftViewMode = .always
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
@@ -46,23 +40,19 @@ class LoginViewController: UIViewController, UITableViewDelegate, UITableViewDat
         return false
     }
 
+    @IBAction func registerButtonPressed(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let signUpVC = storyboard.instantiateViewController(withIdentifier: "PhoneNumberViewController") as? PhoneNumberViewController {
+            signUpVC.modalPresentationStyle = .fullScreen
+            present(signUpVC, animated: true, completion: nil)
+        }
+    }
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let signUpVC = storyboard.instantiateViewController(withIdentifier: "SignUpViewController") as? SignUpViewController {
             signUpVC.modalPresentationStyle = .fullScreen
             present(signUpVC, animated: true, completion: nil)
-        }
-    }
-    
-    private func setupTextFields() {
-        let textFields = [phoneTextField, passwordTextField]
-        for tf in textFields {
-            tf?.layer.cornerRadius = 5
-            tf?.layer.borderWidth = 1
-            tf?.layer.borderColor = UIColor.inputStroke.cgColor
-            tf?.translatesAutoresizingMaskIntoConstraints = false
-            tf?.heightAnchor.constraint(equalToConstant: 45).isActive = true
         }
     }
 
@@ -134,7 +124,4 @@ class LoginViewController: UIViewController, UITableViewDelegate, UITableViewDat
         toggleDropdown()
         tableView.reloadData()
     }
-    
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {}
 }
