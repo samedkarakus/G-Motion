@@ -1,7 +1,5 @@
 ![App Logo](G-Motion/Assets.xcassets/AppLogo.imageset/AppIconVector.png)
 
-# G-Motion
-
 G-Motion is a mobile application designed to work with a hardware device that measures the three-axis angles of motorcycles. By analyzing these angles, the system identifies potentially dangerous road conditions and provides early warnings to the rider, enhancing safety and preventing accidents.
 
 ## Features
